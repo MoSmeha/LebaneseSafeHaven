@@ -1,0 +1,173 @@
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.error {
+  border-color: #ff4d4f;
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.image-upload-container {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.image-upload-container:hover {
+  border-color: #4a90e2;
+}
+
+.upload-text {
+  color: #666;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.amenities-section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff3138;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #fd1920;
+}
+
+.submit-button:active {
+  background-color: #fd1920;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 16px;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken background */
+  z-index: 10; /* Below the form */
+  display: none; /* Hidden by default */
+}
+
+.overlay.active {
+  display: block; /* Show when active */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px; /* Adjust max width to your preference */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Modal-specific styles */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  overflow-y: auto; /* Allow vertical scrolling */
+  max-height: 90vh; /* Limit height to 90% of the viewport */
+}

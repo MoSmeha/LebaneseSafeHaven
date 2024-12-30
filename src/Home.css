@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Navbar {
+  font-size: 1.2em;
+  width: 100%;
+  background-color: #ff3138;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 0 1.5em;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  background-image: url("./assets/Logo-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Logo:hover {
+  transform: scale(1.1);
+}
+
+.pages {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.pages li {
+  margin: 0 0.5em;
+  position: relative;
+}
+
+.pages li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect for both hover and active states */
+.pages li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.pages li a:hover::after,
+.pages li a.active::after {
+  width: 100%;
+}
+
+.pages li a:hover {
+  color: #f0f0f0;
+}
+
+.pages li a:active {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.pages li a.active {
+  font-weight: bold;
+}
+
+.home {
+  overflow: hidden;
+  height: 92vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/lebanon-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 15em 1em 23em 1em;
+}
+
+.Welcome {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+.Welcome span {
+  font-size: 1.4em;
+
+  text-shadow: 2px 2px 0px #ff3138,
+    /* Horizontal and vertical offsets with a #d81c22 color */ -2px -2px 0px
+      #d81c22,
+    2px -2px 0px #d81c22, -2px 2px 0px #ff3138;
+}
+.desc {
+  color: white;
+  font-size: larger;
+  margin-bottom: 2.2em;
+}

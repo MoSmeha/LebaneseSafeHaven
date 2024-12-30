@@ -1,0 +1,106 @@
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.reservation-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.reservation-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.price-summary {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.submit-button,
+.go-back-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #ff3138;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #ff1010;
+}
+
+.go-back-button {
+  background-color: #6c757d;
+  color: white;
+  margin-top: 15px;
+}
+
+.go-back-button:hover {
+  background-color: #545b62;
+}
+
+.submission-confirmation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.submission-confirmation h3 {
+  color: green;
+  margin: 0;
+}
+
+.submission-confirmation p {
+  margin: 5px 0;
+  color: #666;
+}

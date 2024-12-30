@@ -1,0 +1,27 @@
+.Header-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.5em;
+  box-shadow: 1pt;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.addApt-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #ff3138;
+  color: white;
+  border: none;
+  height: 52%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.addApt-button:hover {
+  background-color: #fa222a;
+}
