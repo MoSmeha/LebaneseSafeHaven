@@ -67,10 +67,4 @@ Features:
     Contact form for user inquiries or feedback.
     Links to social media profiles and support resources.
 
-Future Enhancements
 
-The current version of the project is limited to frontend functionality. Future updates will include:
-
-    User authentication to enhance security and personalization.
-    Backend integration for data storage and management.
-    Full responsiveness for seamless usage on mobile devices.
